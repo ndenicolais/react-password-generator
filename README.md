@@ -38,11 +38,9 @@ Open http://localhost:3000 to view the application in the browser.
 - Run `yarn dev` 
 - Run `npm run dev`
 
-## ⚙️ Customize React-toastify
+## ⚙️ Customization
 
 Customize the aspect of React-toastify according to your preferences by editing these parameters:
-
-*** In the below list there are only some parameters that i've used in the code. For all parameters see React-toastify's documentation.
 
 📄 App.js file in 📂 src
 
@@ -54,3 +52,5 @@ Customize the aspect of React-toastify according to your preferences by editing 
 - pauseOnHover: Keep the timer running or not on hover
 - draggable: Allow toast to be draggable
 - progress: Progress bar
+
+*** In this list there are only the parameters that i've used in the code. For all parameters see React-toastify's documentation.
