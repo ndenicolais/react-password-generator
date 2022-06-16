@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import './App.css';
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './parameters';
-import { SUCCESS } from './success';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard} from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +14,7 @@ function App() {
   const [includeLowerLetters, setIncludeLowerLetters] = useState(false);
   const [includeSpecial, setIncludeSpecial] = useState(false);
 
-  const handleGeneratePassword = (e) => {
+  const generatePassword = (e) => {
     if (
       !includeNumbers && !includeUpperLetters && !includeLowerLetters && !includeSpecial
     ) {
@@ -86,12 +85,12 @@ function App() {
     }
   }
 
-  const handleCopyPass = (e) => {
+  const copyPassword = (e) => {
     if (password === '') {
       notify('ERROR: empty password', true)
     } else {
       copyToClipboard()
-      notify(SUCCESS)
+      notify("Password copied to your clipboard")
     }
   }
 
@@ -102,7 +101,7 @@ function App() {
           <h2 className='generator_header'>React Password Generator</h2>
           <div className='generator_password'>
             <h3>{password}</h3>
-            <button onClick={handleCopyPass} className='button_copy'>
+            <button onClick={copyPassword} className='button_copy'>
             <FontAwesomeIcon icon={faClipboard} />
             </button>
           </div>
@@ -164,7 +163,7 @@ function App() {
             />
           </div>
 
-          <button onClick={handleGeneratePassword} className='button_password'>
+          <button onClick={generatePassword} className='button_password'>
             GENERATE PASSWORD
           </button>
           <ToastContainer

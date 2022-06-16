@@ -1,1 +1,0 @@
-export const SUCCESS = 'Password copied to your clipboard'
