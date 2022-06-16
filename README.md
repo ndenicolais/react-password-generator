@@ -44,7 +44,7 @@ Customize the aspect of React-toastify according to your preferences by editing 
 
 *** In the below list there are only some parameters that i've used in the code. For all parameters see React-toastify's documentation.
 
-📁 App.js file
+📄 App.js file in 📂 src
 
 - position: Position of the toast
 - autoClose: Delay in ms to close the toast. If set to false, the notification needs to be closed manually
