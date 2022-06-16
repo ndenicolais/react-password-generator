@@ -1,11 +1,20 @@
 .App {
   min-height: 100vh;
-  background: #FFE780;
+  background: wheat;
   font-family: 'Consolas';
 }
 
+h2 {
+  font-size: 170%;
+  color:white;
+}
+
+h3 {
+  color:white;
+}
+
 .container {
-  width: 350px;
+  width: 450px;
   margin: 0 auto;
   padding-top: 200px;
 }
@@ -14,29 +23,30 @@
   background: #FC445F;
   border-radius: 3px;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .generator_header {
   text-align: center;
-  color: white;
   margin-bottom: 20px;
 }
 
 .generator_password {
   position: relative;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 13px 10px;
-  color: #fff;
-  height: 46px;
+  background:#812B3B;
+  padding: 10px 10px;
+  color: black;
+  height: 40px;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .button_copy {
   position: absolute;
-  background: #FED940;
+  background: wheat;
   color: #FC445F;
   border: none;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   top: 2px;
@@ -45,9 +55,10 @@
 
 .button_password {
   font-family: 'Consolas';
-  background: #FED940;
+  font-weight: bold;
+  background: wheat;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   display: block;
   width: 100%;
   padding: 10px;
@@ -63,6 +74,46 @@ button:active {
 .form-group {
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: white;
   margin-bottom: 15px;
+}
+
+input[type=number] {
+  width: 10%;
+}
+
+input[type=number]::-webkit-inner-spin-button
+{
+  opacity: 1;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: px;
+  background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
 }

@@ -14,6 +14,14 @@ React.js is a JavaScript library for creating user interfaces specific to single
 
 React Router is a complete JavaScript routing library that allows you to manage paths within a web application using so-called dynamic routing. It allows navigation between sections of various components in React applications and allows you to change the URL of the browser while keeping the user interface synchronized with the URL.
 
+[<img src="https://user-images.githubusercontent.com/5574267/54994574-df4c1380-4fc4-11e9-8509-1d3aedbc7b96.png" width="80">](https://fkhadra.github.io/react-toastify/introduction)
+
+React-Toastify allows you to add notifications to your app in an easy way.
+
+[<img src="https://seeklogo.com/images/F/font-awesome-logo-3010FE2434-seeklogo.com.png" width="80">](https://fontawesome.com/)
+
+Font Awesome is the Internet's icon library and toolkit.
+
 ## 📦 Local development
 In the project folder we can perform several actions:
 
