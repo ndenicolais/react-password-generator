@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import './App.css';
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './parameters';
-import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard} from '@fortawesome/free-solid-svg-icons';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
 
 function App() {
   const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ function App() {
     if (
       !includeNumbers && !includeUpperLetters && !includeLowerLetters && !includeSpecial
     ) {
-      notify('Select at least one option', true)
+      notify('ERROR: You must select at least one option', true)
     }
     let characterList = ''
 
@@ -96,85 +96,82 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='container'>
-        <div className='generator'>
-          <h2 className='generator_header'>React Password Generator</h2>
-          <div className='generator_password'>
-            <h3>{password}</h3>
-            <button onClick={copyPassword} className='button_copy'>
-            <FontAwesomeIcon icon={faClipboard} />
-            </button>
-          </div>
-
-          <div className='form-group'>
-            <label htmlFor='password-strength'>Set password length</label>
-            <input
-              defaultValue={passwordLength}
-              onChange={(e) => setPasswordLength(e.target.value)}
-              type='number'
-              id='password-strength'
-              name='password-strength'
-              max='20'
-              min='10'
-            />
-          </div>
-
-          <div className='form-group'>
-            <label htmlFor='include-numbers'>Include numbers</label>
-            <input
-              checked={includeNumbers}
-              onChange={(e) => setIncludeNumbers(e.target.checked)}
-              type='checkbox'
-              id='include-numbers'
-              name='include-numbers'
-            />
-          </div>
-
-          <div className='form-group'>
-            <label htmlFor='include-uppercase-letters'>Include uppercase letters</label>
-            <input
-              checked={includeUpperLetters}
-              onChange={(e) => setIncludeUpperLetters(e.target.checked)}
-              type='checkbox'
-              id='include-uppercase-letters'
-              name='include-uppercase-letters'
-            />
-          </div>
-
-          <div className='form-group'>
-            <label htmlFor='include-lowercase-letters'>Include lowercase letters</label>
-            <input
-              checked={includeLowerLetters}
-              onChange={(e) => setIncludeLowerLetters(e.target.checked)}
-              type='checkbox'
-              id='include-lowercase-letters'
-              name='include-lowercase-letters'
-            />
-          </div>
-
-          <div className='form-group'>
-            <label htmlFor='include-special-characters'>Include special characters</label>
-            <input
-              checked={includeSpecial}
-              onChange={(e) => setIncludeSpecial(e.target.checked)}
-              type='checkbox'
-              id='include-special-characters'
-              name='include-special-characters'
-            />
-          </div>
-
-          <button onClick={generatePassword} className='button_password'>
-            GENERATE PASSWORD
+      <div className='generator'>
+        <h2 className='generator_header'>React Password Generator</h2>
+        <div className='generator_password'>
+          <h3>{password}</h3>
+          <button onClick={copyPassword} className='button_copy'>
+          <FontAwesomeIcon icon={faClipboard} />
           </button>
-          <ToastContainer
-            position='top-center'
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='password-strength'>Set password length</label>
+          <input
+            defaultValue={passwordLength}
+            onChange={(e) => setPasswordLength(e.target.value)}
+            type='number'
+            id='password-strength'
+            name='password-strength'
+            max='20'
+            min='10'
           />
         </div>
+
+        <div className='form-group'>
+          <label htmlFor='include-numbers'>Include numbers</label>
+          <input
+            checked={includeNumbers}
+            onChange={(e) => setIncludeNumbers(e.target.checked)}
+            type='checkbox'
+            id='include-numbers'
+            name='include-numbers'
+          />
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='include-uppercase-letters'>Include uppercase letters</label>
+          <input
+            checked={includeUpperLetters}
+            onChange={(e) => setIncludeUpperLetters(e.target.checked)}
+            type='checkbox'
+            id='include-uppercase-letters'
+            name='include-uppercase-letters'
+          />
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='include-lowercase-letters'>Include lowercase letters</label>
+          <input
+            checked={includeLowerLetters}
+            onChange={(e) => setIncludeLowerLetters(e.target.checked)}
+            type='checkbox'
+            id='include-lowercase-letters'
+            name='include-lowercase-letters'
+          />
+        </div>
+
+        <div className='form-group'>
+          <label htmlFor='include-special-characters'>Include special characters</label>
+          <input
+            checked={includeSpecial}
+            onChange={(e) => setIncludeSpecial(e.target.checked)}
+            type='checkbox'
+            id='include-special-characters'
+            name='include-special-characters'
+          />
+        </div>
+
+        <button onClick={generatePassword} className='button_password'>
+          GENERATE PASSWORD
+        </button>
+        <ToastContainer
+          position='top-center'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={true}
+        />
       </div>
     </div>
   )

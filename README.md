@@ -37,3 +37,20 @@ In the project folder we can perform several actions:
 Open http://localhost:3000 to view the application in the browser.
 - Run `yarn dev` 
 - Run `npm run dev`
+
+## ⚙️ Customize React-toastify
+
+Customize the aspect of React-toastify according to your preferences by editing these parameters:
+
+*** In the below list there are only some parameters that i've used in the code. For all parameters see React-toastify's documentation.
+
+📁 App.js file
+
+- position: Position of the toast
+- autoClose: Delay in ms to close the toast. If set to false, the notification needs to be closed manually
+- hideProgressBar: Display or not the progress bar below the toast(remaining time)
+- newsOnTop: Display newest toast on top
+- closeOnClick: Dismiss toast on click
+- pauseOnHover: Keep the timer running or not on hover
+- draggable: Allow toast to be draggable
+- progress: Progress bar

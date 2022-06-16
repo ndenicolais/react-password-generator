@@ -1,6 +1,5 @@
-.App {
-  min-height: 100vh;
-  background: wheat;
+body {
+  background-color: wheat;
   font-family: 'Consolas';
 }
 
@@ -13,15 +12,13 @@ h3 {
   color:white;
 }
 
-.container {
-  width: 450px;
-  margin: 0 auto;
-  padding-top: 200px;
-}
-
 .generator {
+  width: 450px;
+  position: relative;
+  padding-top: 150px;
+  margin: 0 auto;
+  margin-top: 20%;
   background: #FC445F;
-  border-radius: 3px;
   padding: 20px;
   border-radius: 20px;
 }
