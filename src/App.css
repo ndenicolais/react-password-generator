@@ -17,7 +17,7 @@ h3 {
   position: relative;
   padding-top: 150px;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 10%;
   background: #FC445F;
   padding: 20px;
   border-radius: 20px;
@@ -131,4 +131,11 @@ a:link {
 
 a:visited {
   text-decoration: none;
+}
+
+@media (max-width: 770px) {
+
+  .generator {
+    width: auto;
+  }
 }
