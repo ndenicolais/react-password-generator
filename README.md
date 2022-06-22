@@ -70,14 +70,16 @@ Customize the aspect of React-toastify according to your preferences by editing 
 
 📄 App.js file in 📂 src
 
-- position: Position of the toast
-- autoClose: Delay in ms to close the toast. If set to false, the notification needs to be closed manually
-- hideProgressBar: Display or not the progress bar below the toast(remaining time)
-- newsOnTop: Display newest toast on top
-- closeOnClick: Dismiss toast on click
-- pauseOnHover: Keep the timer running or not on hover
-- draggable: Allow toast to be draggable
-- progress: Progress bar
+|Parameter|Description|
+|-|-|
+|position|position of the toast|
+|autoClose|delay in ms to close the toast. If set to false the notification needs to be closed manually|
+|hideProgressBar|display or not the progress bar below the toast(remaining time)|
+|newsOnTop|display newest toast on top|
+|closeOnClick|dismiss toast on click|
+|pauseOnHover|keep the timer running or not on hover|
+|draggable|allow toast to be draggable|
+|progress|show a progress bar|
 
 ```
 In this list there are only the parameters that i've used in the code.
