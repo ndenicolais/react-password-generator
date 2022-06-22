@@ -58,8 +58,8 @@ yarn
 
 4) Run the application in developer mode
 ```
-npm run dev
-yarn dev
+npm start
+yarn start
 ```
 
 5) Open "localhost" to view the application in the browser.
