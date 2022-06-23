@@ -3,8 +3,8 @@
   "short_name": "RPG",
   "start_url": "",
   "display": "standalone",
-  "background_color": "#F5DEB5",
-  "theme_color": "#FFFFFF",
+  "background_color": "#F8F7DA",
+  "theme_color": "#8C383A",
   "description": "React password generator",
   "icons": [
     {

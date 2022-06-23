@@ -1,15 +1,15 @@
 body {
-  background-color: wheat;
+  background-color: #F8F7DA;
   font-family: 'Consolas';
 }
 
 h2 {
   font-size: 170%;
-  color:white;
+  color:#F8F7DA;
 }
 
 h3 {
-  color:white;
+  color:#F8F7DA;
 }
 
 .generator {
@@ -17,8 +17,8 @@ h3 {
   position: relative;
   padding-top: 150px;
   margin: 0 auto;
-  margin-top: 10%;
-  background: #FC445F;
+  margin-top: 15%;
+  background: #8C383A;
   padding: 20px;
   border-radius: 20px;
 }
@@ -30,7 +30,7 @@ h3 {
 
 .generator_password {
   position: relative;
-  background:#812B3B;
+  background:#DCA349;
   padding: 10px 10px;
   color: black;
   height: 40px;
@@ -40,8 +40,8 @@ h3 {
 
 .button_copy {
   position: absolute;
-  background: wheat;
-  color: #FC445F;
+  background: #F8F7DA;
+  color: #8C383A;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -53,13 +53,13 @@ h3 {
 .button_password {
   font-family: 'Consolas';
   font-weight: bold;
-  background: wheat;
+  background: #F8F7DA;
   border: none;
   border-radius: 10px;
   display: block;
   width: 100%;
   padding: 10px;
-  color: #FC445F;
+  color: #8C383A;
   font-size: 17px;
   cursor: pointer;
 }
@@ -71,7 +71,7 @@ button:active {
 .form-group {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #F8F7DA;
   margin-bottom: 15px;
 }
 
@@ -117,7 +117,7 @@ input[type=checkbox]:checked:after {
 
 .footer{
   margin-top: 1rem;
-  background-color: wheat;
+  background-color: #F8F7DA;
   position: fixed;
   bottom: 0;
   left: 0;
